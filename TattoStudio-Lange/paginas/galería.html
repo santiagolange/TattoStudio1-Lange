@@ -6,51 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatto Studio</title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
-        <nav class="menu__flex">
-            <ul class="menu">
-                <ul class="menu">
-                    <li class="menu__items"><a class="transition__color" href="../paginas/galería.html">GALERÍA</a></li>
-                    <li class="menu__items"><a class="transition__color" href="../paginas/artistas.html">ARTISTAS</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../recursos/vector.svg" alt="logo" width="130px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../paginas/artistas.html">ARTISTAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../paginas/galería.html">GALERÍA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../paginas/formulario.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../paginas/ubicación.html">UBICACIÓN</a>
+                </li>
                 </ul>
-                <ul class="menu">
-                    <li class="logo"><a href="../index.html"><img class=""  src="../recursos/vector.svg"></a>
-                </ul>
-                <ul class="menu">
-                    <li class="menu__items"><a class="transition__color" href="../paginas/ubicación.html">UBICACIÓN</a></li>
-                    <li class="menu__items"><a class="transition__color" href="../paginas/formulario.html">CONTACTO</a></li>
-                </ul>
-            </ul>
+            </div>
+            </div>
         </nav>
     </header>
-    <main class="fondo">
-        <h1>GALERÍA</h1>
-        <section class="main__grid">
-            <picture>
-                <img class="imagen" src="../recursos/buho.jpg">
-            </picture>
-            <picture>
-                <img class="imagen" src="../recursos/messi.jpg">
-            </picture>
-            <picture>
-                <video id="video" class="imagen" src="../recursos/video.mp4"></video>
-            </picture>
-            <picture>
-                <img class="imagen" src="../recursos/araña.png">
-            </picture>
-            <picture>
-                <img class="imagen" src="../recursos/tigre.jpeg">
-            </picture>
-        </section>
+
+    <main>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+                src="../recursos/araña.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+            />
+        
+            <img
+                src="../recursos/buho.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+            />
+            </div>
+        
+            <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+                src="../recursos/messi.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+            />
+        
+            <img
+                src="../recursos/reloj.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+            />
+            </div>
+        
+            <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+                src="../recursos/tigre.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+            />
+        
+            <img
+                src="../recursos/cara.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+            />
+            </div>
+        </div>
     </main>
-    <footer class="footer footer__flexbox">
-        <section>
-            <article>
-                <p class="footer__texto">©Tonga Tatto Studio</p>
-            </article>
-        </section>
+
+    <footer>
+        <div class="footer d-flex justify-content-center align-items-center">
+            <p>©Tonga Tatto Studio</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
