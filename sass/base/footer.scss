@@ -2,16 +2,14 @@
 
 .footer{
     grid-area: footer;
-    background-color: black;
+    background-color: map-get($colores,color);
     &__flexbox{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &__texto{
-        font-size: 1.5em;
-        color: $fuente-color;
-        font-family: 'Antonio', sans-serif;
+        @extend .section__descripcion;
     }
 }
 
